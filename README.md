@@ -1,2 +1,2 @@
 # Calculator
-https://jahidulfahad.github.io/Calculator/
+https://jahidulfahad.github.io/calculator/
