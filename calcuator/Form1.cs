@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace calcuator
 {
+   
     public partial class Form1 : Form
     {
         String option;
         double num1, num2;
         double result;
+        double t = 0;
+        double a = 1;
+        double b = 0;
+        double c = 1;
         public Form1()
         {
             InitializeComponent();
@@ -50,15 +55,14 @@ namespace calcuator
             t1.Clear();
             t = 0;
             a = 1;
+            b = 0;
+            c = 1;
             label1.Text = t1.Text;
             label2.Text = t1.Text;
             label3.Text = t1.Text;
             t1.Text = "0";
         }
-        double t = 0;
-        double a = 1;
-        double b = 0;
-        double c = 1;
+        
         private void button_Click(object sender, EventArgs e)
         {
            
@@ -67,17 +71,14 @@ namespace calcuator
             {
                 Button btn = (Button)sender;
 
-                if (btn.Text == "." && t1.Text.Contains("."))
-                    return;
-                t1.Text += btn.Text;
-
                 num1 = Double.Parse(t1.Text);
                 //label1.Text = t1.Text;
                 num2 = Double.Parse(t1.Text);
-                label3.Text = t1.Text;
+                
       
                 if (btn.Text=="+")
                 {
+                    option = "+";
                     label2.Text = "+";
                     t = t + num1;
                     string s = "";
@@ -87,6 +88,7 @@ namespace calcuator
                 }
                 if (btn.Text == "×")
                 {
+                    option= "×";
                     label2.Text = "×";
                     a = a * num1;
                     string s = "";
@@ -96,6 +98,7 @@ namespace calcuator
                 }
                 if (btn.Text == "−")
                 {
+                    option = "−"; 
                     label2.Text = "−";
                     b = num1 - b;
                     string s = "";
@@ -105,6 +108,7 @@ namespace calcuator
                 }
                 if (btn.Text == "÷")
                 {
+                    option= "÷"; 
                     label2.Text = "÷";
                     c = num1 / c;
                     string s = "";
@@ -114,12 +118,28 @@ namespace calcuator
                 }
                 if (btn.Text == "=")
                 {
-                    result = t + num2;
-                    result = a * num2;
-                    result = b - num2;
-                    result = c / num2;
+                    label3.Text = t1.Text;
+                    if (option=="+")
+                    {
+                        result = t + num2;
+                    }
+                    if (option == "×")
+                    {
+                        result = a * num2;
+
+                    }
+                    if (option == "−")
+                    {
+                        result = b - num2;
+                    }
+                    if (option == "÷")
+                    {
+                        result = c / num2;
+                    }
+
+                    t1.Text = result + "";
                 }
-                t1.Text = result + "";
+                
 
             }
             catch (Exception exception)
