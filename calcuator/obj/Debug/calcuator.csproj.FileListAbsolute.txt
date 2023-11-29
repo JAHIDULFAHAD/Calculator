@@ -1,0 +1,10 @@
+D:\all seamster slide\c#\calcuator\calcuator\bin\Debug\calcuator.exe.config
+D:\all seamster slide\c#\calcuator\calcuator\bin\Debug\calcuator.exe
+D:\all seamster slide\c#\calcuator\calcuator\bin\Debug\calcuator.pdb
+D:\all seamster slide\c#\calcuator\calcuator\obj\Debug\calcuator.csproj.AssemblyReference.cache
+D:\all seamster slide\c#\calcuator\calcuator\obj\Debug\calcuator.Form1.resources
+D:\all seamster slide\c#\calcuator\calcuator\obj\Debug\calcuator.Properties.Resources.resources
+D:\all seamster slide\c#\calcuator\calcuator\obj\Debug\calcuator.csproj.GenerateResource.cache
+D:\all seamster slide\c#\calcuator\calcuator\obj\Debug\calcuator.csproj.CoreCompileInputs.cache
+D:\all seamster slide\c#\calcuator\calcuator\obj\Debug\calcuator.exe
+D:\all seamster slide\c#\calcuator\calcuator\obj\Debug\calcuator.pdb

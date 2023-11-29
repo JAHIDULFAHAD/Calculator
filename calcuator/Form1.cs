@@ -10,7 +10,6 @@ using System.Windows.Forms;
 
 namespace calcuator
 {
-   
     public partial class Form1 : Form
     {
         String option;
